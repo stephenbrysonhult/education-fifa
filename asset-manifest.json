@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/education-fifa/static/css/main.acfc854d.chunk.css",
+    "main.js": "/education-fifa/static/js/main.5f49ffad.chunk.js",
+    "main.js.map": "/education-fifa/static/js/main.5f49ffad.chunk.js.map",
+    "runtime~main.js": "/education-fifa/static/js/runtime~main.cfd99a6d.js",
+    "runtime~main.js.map": "/education-fifa/static/js/runtime~main.cfd99a6d.js.map",
+    "static/js/2.3832993b.chunk.js": "/education-fifa/static/js/2.3832993b.chunk.js",
+    "static/js/2.3832993b.chunk.js.map": "/education-fifa/static/js/2.3832993b.chunk.js.map",
+    "index.html": "/education-fifa/index.html",
+    "precache-manifest.0d55f45be15d2445b9948100f357e14d.js": "/education-fifa/precache-manifest.0d55f45be15d2445b9948100f357e14d.js",
+    "service-worker.js": "/education-fifa/service-worker.js",
+    "static/css/main.acfc854d.chunk.css.map": "/education-fifa/static/css/main.acfc854d.chunk.css.map",
+    "static/media/group.scss": "/education-fifa/static/media/EFCircularWeb-Medium.c8399aaf.woff",
+    "static/media/amfc.png": "/education-fifa/static/media/amfc.894b20e8.png",
+    "static/media/bmfc.png": "/education-fifa/static/media/bmfc.31962d0c.png",
+    "static/media/cfc.png": "/education-fifa/static/media/cfc.d854acff.png",
+    "static/media/fcb.png": "/education-fifa/static/media/fcb.9a17b93d.png",
+    "static/media/imfc.png": "/education-fifa/static/media/imfc.015dd8c2.png",
+    "static/media/jfc.png": "/education-fifa/static/media/jfc.b5052fbd.png",
+    "static/media/lfc.png": "/education-fifa/static/media/lfc.d73b731c.png",
+    "static/media/mcfc.png": "/education-fifa/static/media/mcfc.234c942f.png",
+    "static/media/mufc.png": "/education-fifa/static/media/mufc.01fb89c1.png",
+    "static/media/psg.png": "/education-fifa/static/media/psg.0cb80df2.png",
+    "static/media/rmfc.png": "/education-fifa/static/media/rmfc.e36a999d.png",
+    "static/media/thfc.png": "/education-fifa/static/media/thfc.514abec1.png"
+  }
+}
