@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "19dd30230ebccedff8c3d8ecac9ca9a3",
+    "revision": "614ced9af02e1cb6fbcf9b237c508b6f",
     "url": "/education-fifa/index.html"
   },
   {
-    "revision": "6acdbbf7cd4f02ff5061",
+    "revision": "b80046f5f15ecd056448",
     "url": "/education-fifa/static/css/main.103b88d2.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/education-fifa/static/js/2.f2395e4b.chunk.js"
   },
   {
-    "revision": "6acdbbf7cd4f02ff5061",
-    "url": "/education-fifa/static/js/main.f227366c.chunk.js"
+    "revision": "b80046f5f15ecd056448",
+    "url": "/education-fifa/static/js/main.2a7b10fd.chunk.js"
   },
   {
     "revision": "6a3ab7b01df26af676c6",
