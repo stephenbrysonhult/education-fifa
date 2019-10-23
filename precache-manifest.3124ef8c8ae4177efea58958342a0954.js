@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "fad4e3a6b48859a9327a50d16cfff90e",
+    "revision": "878d20d2452dcfa7c23e0c8abf490633",
     "url": "/education-fifa/index.html"
   },
   {
-    "revision": "d59eea35b39d0e4e4eea",
+    "revision": "73c43faeba4a7860741f",
     "url": "/education-fifa/static/css/main.93ff49b2.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/education-fifa/static/js/2.2b81cb4b.chunk.js"
   },
   {
-    "revision": "d59eea35b39d0e4e4eea",
-    "url": "/education-fifa/static/js/main.8a42a044.chunk.js"
+    "revision": "73c43faeba4a7860741f",
+    "url": "/education-fifa/static/js/main.4dc50df3.chunk.js"
   },
   {
     "revision": "6a3ab7b01df26af676c6",
@@ -80,8 +80,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/education-fifa/static/media/ifc.5b1bba52.png"
   },
   {
-    "revision": "b5052fbdb1518bda3df3e3c8c1eb6caa",
-    "url": "/education-fifa/static/media/jfc.b5052fbd.png"
+    "revision": "077f0505535b631bcc25a1e747282374",
+    "url": "/education-fifa/static/media/jfc.077f0505.png"
   },
   {
     "revision": "d73b731caf9b036535bad7eea156450c",
