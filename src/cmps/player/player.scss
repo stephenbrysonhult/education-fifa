@@ -1,0 +1,99 @@
+@import '../../assets/scss/style.scss';
+
+.player{
+    $this: '.player';
+    position: relative;
+    overflow: visible;
+
+    &__label{
+        cursor: pointer;
+        @include flexbox;
+        @include flexbox-direction(column);
+    }
+    &__modal{
+        position: fixed;
+        background: $color-black-40;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        pointer-events: none;
+        z-index: 1;
+        transition: .4s;
+ 
+        &--open{
+            opacity: 1;
+            pointer-events: initial;
+
+            #{$this}__details{
+                @include transform-translate(0, -20%);
+            }
+        }
+    }
+    &__container{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        max-width: $mobile;
+        @include transform-translate(-50%, -50%);
+    }
+    &__details{
+        background: $color-1;
+        border-radius: #{$spacing-unit * .5};
+        overflow: hidden;
+        transition: .4s;
+        margin-top: 20%;
+        @include box-shadow(0, 0, #{$spacing-unit * 2}, $color-black-10);
+    }
+    &__header{
+        @include flexbox;
+        @include flexbox-align-items(center);
+        @include flexbox-justify-content(space-between);
+        background: $color-black-05;
+    }
+    &__name{
+        @include font-size-large;
+        @include font-weight-medium;
+        color: $color-2;
+        padding: #{$spacing-unit * 2};
+        @include media($mobile){
+            // @include font-size-regular;
+        }
+    }
+    &__stats{
+        padding: #{$spacing-unit * 2};
+    }
+    &__trophies{
+        margin-bottom: #{$spacing-unit * .2};
+        @include flexbox;
+
+        &--1{
+            #{$this}__trophy{
+                &:nth-of-type(1){
+                    display: inline-block;
+                }
+            }
+        }
+        &--2{
+            #{$this}__trophy{
+                &:nth-of-type(1), &:nth-of-type(2){
+                    display: inline-block;
+                }
+            }
+        }
+        &--3{
+            #{$this}__trophy{
+                &:nth-of-type(1), &:nth-of-type(2), &:nth-of-type(3){
+                    display: inline-block;
+                }
+            }
+        }
+    }
+    &__trophy{
+        color: #e8c60a;
+        font-size: .4rem;
+        margin-right: #{$spacing-unit * .2};
+        display: none;
+    }
+}

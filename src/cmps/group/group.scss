@@ -1,0 +1,128 @@
+@import "../../assets/scss/style.scss";
+
+body {
+	background: $color-2;
+	color: $color-1 !important;
+}
+p,
+h1,
+h2,
+h3,
+th,
+td,
+tr {
+	color: $color-1 !important;
+}
+
+.group {
+	$this: ".group";
+
+	&__row {
+		padding: #{$spacing-unit * 2} 0;
+		border-bottom: #{$spacing-unit * 0.2} solid $color-white-20;
+		@include flexbox;
+		@include flexbox-align-items(center);
+
+		&--heading {
+			padding-top: 0;
+			padding-bottom: #{$spacing-unit * 2};
+			border-color: $color-1;
+		}
+		// &:nth-last-of-type(1){
+		//     border: 0;
+		// }
+
+		// fixture
+		&--fixture {
+			background: $color-black-20;
+			padding: #{$spacing-unit * 2};
+			@include flexbox-justify-content(space-between);
+			@include media($mobile) {
+				padding: #{$spacing-unit * 1};
+			}
+			#{$this}__scoring {
+				text-align: center;
+				@include flexbox;
+				@include flexbox-direction(column);
+				@include flexbox-justify-content(center);
+				@include flexbox-align-items(center);
+			}
+			#{$this}__score {
+				@include font-size-regular;
+				@include font-weight-bold;
+			}
+			#{$this}__agg {
+				@include font-size-small;
+				@include font-weight-medium;
+			}
+		}
+	}
+	&__cell {
+		padding: 0 #{$spacing-unit};
+		text-align: center;
+		@include flexbox;
+		@include flexbox-justify-content(center);
+		@include flexbox-flex(1);
+		@include font-weight-book;
+		@include font-size-regular;
+		@include media($mobile) {
+			@include font-size-small;
+			padding: 0 #{$spacing-unit * 0.5};
+		}
+
+		&--player {
+			padding-left: 0;
+			text-align: left;
+			overflow: hidden;
+			@include flexbox-justify-content(flex-start);
+			@include flexbox-flex(5);
+			@include flexbox-align-items(center);
+		}
+		&--heading {
+			@include font-weight-bold;
+		}
+		&:nth-last-of-type(1) {
+			padding-right: 0;
+		}
+		@include media($mobile) {
+			&:nth-of-type(6),
+			&:nth-of-type(7) {
+				display: none;
+			}
+		}
+
+		// fixture
+		&--away {
+			@include flexbox-justify-content(flex-end);
+
+			#{$this}__badge {
+				order: 2;
+				margin-left: #{$spacing-unit};
+				margin-right: 0;
+			}
+			#{$this}__player-name {
+				order: 1;
+				text-align: right;
+
+				.player__label {
+					@include flexbox-align-items(flex-end);
+
+					.player__trophy {
+						margin: 0 0 0 #{$spacing-unit * 0.2};
+					}
+                }
+			}
+		}
+	}
+	&__badge {
+		width: 100%;
+		max-width: #{$spacing-unit * 3};
+		max-width: #{$spacing-unit * 3};
+		margin-right: #{$spacing-unit};
+	}
+	&__player-name {
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+}

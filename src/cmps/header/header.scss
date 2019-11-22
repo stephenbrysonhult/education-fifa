@@ -1,0 +1,49 @@
+@import "../../assets/scss/style.scss";
+
+.header {
+    padding: #{$spacing-unit * 4} 0;
+    @include flexbox;
+    @include flexbox-justify-content(space-between);
+    @include flexbox-align-items(center);
+    @include media($mobile){
+        padding: #{$spacing-unit * 2} 0;
+    }
+
+    &__logo {
+        @include flexbox;
+        @include flexbox-align-items(center);
+
+        &-item{
+            @include font-size-h2;
+
+            &:nth-of-type(1){
+                margin-right: #{$spacing-unit * 1};
+            }
+            &--ef{
+                max-height: #{$spacing-unit * 6};
+                @include media($mobile){
+                    max-height: #{$spacing-unit * 4};
+                }
+            }
+        }
+    }
+    &__nav{
+        margin: 0 -#{$spacing-unit * 2};
+        @include flexbox;
+        @include flexbox-align-items(center);
+
+        &-item{
+            padding: #{$spacing-unit * 2};
+            @include flexbox;
+            @include flexbox-align-items(center);
+            @include font-size-large;
+            @include font-weight-bold;
+
+            &-live{
+                color: $color-live;
+                margin-right: #{$spacing-unit};
+                @include font-size-small;
+            }
+        }
+    }
+}

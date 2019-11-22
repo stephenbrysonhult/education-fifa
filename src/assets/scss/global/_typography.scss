@@ -1,0 +1,220 @@
+// typography
+// imports
+@import "../generic/variable", "../generic/media";
+
+@font-face {
+  font-family: "EFCircularWeb-Black";
+  src: url("../../fonts/EFCircularWeb-Black.woff") format("woff2"),
+    url("../../fonts/EFCircularWeb-Black.woff") format("woff");
+}
+@font-face {
+  font-family: "circular-bold";
+  src: url("../../fonts/EFCircularWeb-Bold.woff") format("woff2"),
+    url("../../fonts/EFCircularWeb-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: "circular-medium";
+  src: url("../../fonts/EFCircularWeb-Medium.woff") format("woff2"),
+    url("../../fonts/EFCircularWeb-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: "circular-book";
+  src: url("../../fonts/EFCircularWeb-Book.woff") format("woff2"),
+    url("../../fonts/EFCircularWeb-Book.woff") format("woff");
+}
+
+// font-weights
+@mixin font-weight-book {
+  font-family: "circular-book";
+}
+@mixin font-weight-medium {
+  font-family: "circular-medium";
+}
+@mixin font-weight-bold {
+  font-family: "circular-bold";
+}
+@mixin font-weight-black {
+  font-family: "circular-black";
+}
+
+body {
+  @include font-weight-book;
+}
+
+@mixin font-size-h1 {
+  $map: (
+    $mobile: 32px,
+    $tablet-portrait: 40px,
+    $tablet-landscape: 48px
+  );
+  @include poly-fluid-sizing("font-size", $map);
+  line-height: 1.05em;
+  @include media($tablet-portrait) {
+    line-height: 1.125em;
+  }
+  @include media($mobile) {
+    line-height: 1.25em;
+  }
+}
+
+@mixin font-size-h2 {
+  $map: (
+    $mobile: 26px,
+    $tablet-portrait: 32px,
+    $tablet-landscape: 36px
+  );
+  @include poly-fluid-sizing("font-size", $map);
+  line-height: 1.25em;
+  @include media($mobile) {
+    line-height: 1.15384615em;
+  }
+}
+
+@mixin font-size-h3 {
+  $map: (
+    $mobile: 22px,
+    $tablet-portrait: 24px,
+    $tablet-landscape: 28px
+  );
+  @include poly-fluid-sizing("font-size", $map);
+  line-height: 1.25em;
+  @include media($mobile) {
+    line-height: 1.13636364em;
+  }
+}
+
+@mixin font-size-h4 {
+  $map: (
+    $mobile: 18px,
+    $tablet-portrait: 22px,
+    $tablet-landscape: 24px
+  );
+  @include poly-fluid-sizing("font-size", $map);
+  line-height: 1.22222222em;
+  @include media($mobile) {
+    line-height: 1.11111111em;
+  }
+}
+
+@mixin font-size-large {
+  $map: (
+    $tablet-portrait: 16px,
+    $tablet-landscape: 18px
+  );
+  @include poly-fluid-sizing("font-size", $map);
+  line-height: 1.8em;
+  @include media($mobile) {
+    line-height: 1.5em;
+  }
+}
+
+@mixin font-size-regular {
+  $map: (
+    $tablet-portrait: 14px,
+    $tablet-landscape: 16px
+  );
+  @include poly-fluid-sizing("font-size", $map);
+  line-height: 1.5em;
+  @include media($mobile) {
+    line-height: 1.3em;
+  }
+}
+
+@mixin font-size-small { 
+  $map: ( 
+    $tablet-portrait: 12px, 
+    $tablet-landscape: 14px
+  );
+  @include poly-fluid-sizing("font-size", $map);
+  line-height: 1.4em;
+  @include media($mobile) {
+    line-height: 1.3em;
+  }
+}
+
+h1.h1 {
+  @include font-weight-bold;
+  @include font-size-h1;
+  margin: #{$spacing-unit * 6} 0;
+  @include media($mobile){
+    margin: #{$spacing-unit * 4} 0;
+  }
+}
+
+h2.h2 {
+  @include font-weight-bold;
+  @include font-size-h2;
+  margin: #{$spacing-unit * 4} 0;
+}
+
+h3.h3 {
+  @include font-weight-bold;
+  @include font-size-h3;
+  margin: #{$spacing-unit * 4} 0 #{$spacing-unit * 2};
+}
+
+h4.h4 {
+  @include font-weight-medium;
+  @include font-size-h4;
+  margin: #{$spacing-unit * 4} 0 #{$spacing-unit * 2};
+}
+
+h1.h1,
+h2.h2,
+h3.h3,
+h4.h4 {
+  color: $color-2;
+
+  &--accent {
+    padding-bottom: #{$spacing-unit * 2};
+    position: relative;
+  
+    &:after {
+      content: "";
+      width: #{$spacing-unit * 6};
+      background: $color-1;
+      height: #{$spacing-unit / 2};
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  }
+}
+
+b.b {
+  @include font-weight-medium;
+}
+
+p.p {
+  @include font-weight-book;
+  @include font-size-regular;
+  max-width: 53em;
+  color: $color-black-60;
+  margin: #{$spacing-unit * 2} 0;
+}
+
+a.a {
+  text-decoration: underline;
+}
+
+.hr {
+  border-color: $color-black-05;
+  border-style: dashed;
+  border-width: #{$spacing-unit * 0.1};
+  margin: #{$spacing-unit * 2} -#{$spacing-unit * 4};
+  @include media($mobile) {
+    margin: #{$spacing-unit * 2} -#{$spacing-unit * 2};
+  }
+
+  &--alt {
+    border-color: $color-white-10;
+  }
+}
+
+.fas {
+  $map: (
+    $tablet-portrait: 16px,
+    $tablet-landscape: 18px
+  );
+  @include poly-fluid-sizing("font-size", $map);
+}

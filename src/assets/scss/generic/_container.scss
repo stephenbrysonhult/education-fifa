@@ -1,0 +1,29 @@
+// container
+
+@mixin container {
+  margin: 0 auto;
+  max-width: $tablet-landscape;
+  width: 100%;
+  padding-left: #{$spacing-unit * 4};
+  padding-right: #{$spacing-unit * 4};
+
+  @include media($mobile) {
+      padding-left: #{$spacing-unit * 1.5};
+      padding-right: #{$spacing-unit * 1.5};
+  }
+}
+
+@mixin container-m-no-pad {
+  @include media($mobile) {
+      padding-left: 0;
+      padding-right: 0;
+  }
+}
+
+.container {
+  @include container;
+
+  &--m-no-pad{
+    @include container-m-no-pad; 
+  }
+}

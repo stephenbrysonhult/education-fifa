@@ -1,0 +1,8 @@
+// media
+
+// custom
+@mixin media($value) {
+  @media (max-width: $value) {
+    @content;
+  }
+}

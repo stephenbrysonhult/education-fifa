@@ -1,0 +1,6 @@
+@import '../../assets/scss/style.scss';
+
+.hero{
+    $this: '.hero';
+    margin: #{$spacing-unit * 6} 0;
+}

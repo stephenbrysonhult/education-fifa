@@ -1,0 +1,17 @@
+// imports
+@import "./reset"; 
+
+@mixin load {
+    background: $color-black-05;
+    border-radius: #{$spacing-unit * .2};
+    color: transparent;
+    position: relative;
+    animation: load 1s infinite;
+    @include transform-origin(center left);
+
+    /* animation */
+    @keyframes load {
+        0% {@include transform-scale(0);}
+        100% {@include transform-scale(1);}
+    }
+}
