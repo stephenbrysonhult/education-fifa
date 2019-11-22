@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/education-fifa/static/css/main.26427cbc.chunk.css",
-    "main.js": "/education-fifa/static/js/main.3c02c38c.chunk.js",
-    "main.js.map": "/education-fifa/static/js/main.3c02c38c.chunk.js.map",
+    "main.js": "/education-fifa/static/js/main.712b916d.chunk.js",
+    "main.js.map": "/education-fifa/static/js/main.712b916d.chunk.js.map",
     "runtime~main.js": "/education-fifa/static/js/runtime~main.cfd99a6d.js",
     "runtime~main.js.map": "/education-fifa/static/js/runtime~main.cfd99a6d.js.map",
-    "static/js/2.ebcd69d2.chunk.js": "/education-fifa/static/js/2.ebcd69d2.chunk.js",
-    "static/js/2.ebcd69d2.chunk.js.map": "/education-fifa/static/js/2.ebcd69d2.chunk.js.map",
+    "static/js/2.267c682c.chunk.js": "/education-fifa/static/js/2.267c682c.chunk.js",
+    "static/js/2.267c682c.chunk.js.map": "/education-fifa/static/js/2.267c682c.chunk.js.map",
     "index.html": "/education-fifa/index.html",
-    "precache-manifest.967178a15515c32e160de2930a61b750.js": "/education-fifa/precache-manifest.967178a15515c32e160de2930a61b750.js",
+    "precache-manifest.5e75db78f82f6eec2cfb8c4428e3f7ce.js": "/education-fifa/precache-manifest.5e75db78f82f6eec2cfb8c4428e3f7ce.js",
     "service-worker.js": "/education-fifa/service-worker.js",
     "static/css/main.26427cbc.chunk.css.map": "/education-fifa/static/css/main.26427cbc.chunk.css.map",
     "static/media/player.scss": "/education-fifa/static/media/EFCircularWeb-Medium.c8399aaf.woff",
@@ -36,6 +36,7 @@
     "static/media/nfc.png": "/education-fifa/static/media/nfc.b75ea818.png",
     "static/media/psg.png": "/education-fifa/static/media/psg.0cb80df2.png",
     "static/media/rbfc.png": "/education-fifa/static/media/rbfc.a6aadfde.png",
+    "static/media/rbl.png": "/education-fifa/static/media/rbl.109ac5e3.png",
     "static/media/rmfc.png": "/education-fifa/static/media/rmfc.e36a999d.png",
     "static/media/thfc.png": "/education-fifa/static/media/thfc.f3a6fcdf.png",
     "static/media/vfc.png": "/education-fifa/static/media/vfc.7a76c0cf.png"
