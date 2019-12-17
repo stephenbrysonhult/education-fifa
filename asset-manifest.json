@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/education-fifa/static/css/main.81c0b62a.chunk.css",
+    "main.css": "/education-fifa/static/css/main.deef39a0.chunk.css",
     "main.js": "/education-fifa/static/js/main.dc4e159a.chunk.js",
     "main.js.map": "/education-fifa/static/js/main.dc4e159a.chunk.js.map",
     "runtime~main.js": "/education-fifa/static/js/runtime~main.cfd99a6d.js",
@@ -8,9 +8,9 @@
     "static/js/2.267c682c.chunk.js": "/education-fifa/static/js/2.267c682c.chunk.js",
     "static/js/2.267c682c.chunk.js.map": "/education-fifa/static/js/2.267c682c.chunk.js.map",
     "index.html": "/education-fifa/index.html",
-    "precache-manifest.148a2aa3323b6abfde9466efcded8bcb.js": "/education-fifa/precache-manifest.148a2aa3323b6abfde9466efcded8bcb.js",
+    "precache-manifest.cfdbba9e8dd49b83073c52d0db056bd9.js": "/education-fifa/precache-manifest.cfdbba9e8dd49b83073c52d0db056bd9.js",
     "service-worker.js": "/education-fifa/service-worker.js",
-    "static/css/main.81c0b62a.chunk.css.map": "/education-fifa/static/css/main.81c0b62a.chunk.css.map",
+    "static/css/main.deef39a0.chunk.css.map": "/education-fifa/static/css/main.deef39a0.chunk.css.map",
     "static/media/player.scss": "/education-fifa/static/media/EFCircularWeb-Medium.c8399aaf.woff",
     "static/media/acm.png": "/education-fifa/static/media/acm.02103462.png",
     "static/media/afc.png": "/education-fifa/static/media/afc.63e49080.png",
